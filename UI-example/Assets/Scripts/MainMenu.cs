@@ -5,17 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-	public void PlayGame ()
+    public void PlayGame ()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
 	}
@@ -27,6 +17,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void PauseGame() 
 	{
+
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
 	}
 
