@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PauseMenuH : MonoBehaviour
 {
 
-    public GameObject PauseMenuPortrait;
+    public GameObject PauseMenuHorizontal;
 
     private void Awake()
     {
@@ -16,9 +16,9 @@ public class PauseMenuH : MonoBehaviour
     public void ActivatePauseMenu()
     {
         float wh = Screen.width / Screen.height;
-        if (wh > 1)
+        if (wh >= 1)
         {
-            PauseMenuPortrait.SetActive(true);
+            PauseMenuHorizontal.SetActive(true);
 
             //PauseMenuPortrait.alpha = 1;
             //PauseMenuPortrait.interactable = true;
@@ -29,7 +29,7 @@ public class PauseMenuH : MonoBehaviour
         //float wh = Screen.width / Screen.height;
         //if (wh > 1)
         //{
-            PauseMenuPortrait.SetActive(false);
+            PauseMenuHorizontal.SetActive(false);
 
         //    //PauseMenuPortrait.alpha = 0;
         //    //PauseMenuPortrait.interactable = false;
